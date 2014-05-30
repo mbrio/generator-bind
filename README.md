@@ -1,5 +1,7 @@
 # generator-bind
 
+[![Build Status](https://travis-ci.org/mbrio/generator-bind.svg?branch=master)](https://travis-ci.org/mbrio/generator-bind)
+
   A `bind` polyfill that returns a `GeneratorFunction` when the function being bound is a generator.
 
 ## Installation
