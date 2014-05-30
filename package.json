@@ -1,0 +1,31 @@
+{
+  "name": "generator-bind",
+  "version": "1.0.0",
+  "description": "A bind polyfil that returns a GeneratorFunction when the function being bound is a generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --harmony test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mbrio/generator-bind.git"
+  },
+  "keywords": [
+    "generator",
+    "yield",
+    "bind",
+    "polyfil",
+    "async",
+    "flow",
+    "co",
+    "coro",
+    "coroutine"
+  ],
+  "readmeFilename": "README.md",
+  "author": "Michael Diolosa <michael.diolosa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbrio/generator-bind/issues"
+  },
+  "homepage": "https://github.com/mbrio/generator-bind"
+}
