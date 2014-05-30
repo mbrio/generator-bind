@@ -1,3 +1,4 @@
+/* jshint node:true, esnext:true */
 'use strict';
 
 let slice = Array.prototype.slice;
@@ -21,14 +22,14 @@ function bind(ctx, fn) {
   return nativeBind.apply(fn, args);
 }
 
-bind.polyfil = function polyfil() {
-  function* polyfilTest() { yield 0; }
-  let bound = polyfilTest.bind(null);
+bind.polyfill = function polyfill() {
+  function* polyfillTest() { yield 0; }
+  let bound = polyfillTest.bind(null);
 
   if (bound.constructor.name !== 'GeneratorFunction') {
     Function.prototype.__bind = nativeBind;
 
-    Function.prototype.bind = function polyfilBind(ctx) {
+    Function.prototype.bind = function polyfillBind(ctx) {
       let args = [ctx, this].concat(slice.call(arguments, 1));
       return bind.apply(null, args);
     };

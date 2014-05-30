@@ -1,6 +1,6 @@
 # generator-bind
 
-  A `bind` polyfil that returns a `GeneratorFunction` when the function being bound is a generator.
+  A `bind` polyfill that returns a `GeneratorFunction` when the function being bound is a generator.
 
 ## Installation
 
@@ -45,14 +45,14 @@ let genbind = require('generator-bind');
 genbind(ctx, genFunc);
 ```
 
-  or a polyfil:
+  or a polyfill:
 
 ```js
-let genbind = require('generator-bind').polyfil();
+let genbind = require('generator-bind').polyfill();
 genFunc.bind(ctx);
 ```
 
-  The polyfil also returns the new `bind` function so if you choose to use the polyfil you have the option of using the function as well.
+  The polyfill also returns the new `bind` function so if you choose to use the polyfill you have the option of using the function as well.
 
 ## License
 

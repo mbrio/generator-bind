@@ -1,8 +1,9 @@
+/* jshint node:true, esnext:true */
 'use strict';
 
 let assert = require('assert');
-let bind = require('./index').polyfil();
-require('./index').polyfil();
+let bind = require('./index').polyfill();
+require('./index').polyfill();
 
 function Counter(max) { this.max = max || 5; }
 
